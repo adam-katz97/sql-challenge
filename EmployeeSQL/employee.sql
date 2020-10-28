@@ -1,3 +1,4 @@
 create table departments(
-dept_no var
-)
+	dept_no varchar not NULL Primary Key, 
+	dept_name varchar not NULL
+);
