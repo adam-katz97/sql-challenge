@@ -26,3 +26,15 @@ dept_no varchar not null,
 	emp_no int not null,
 	foreign key (emp_no) references salaries(emp_no)
 );
+
+create table employees(
+emp_no int not null,
+	foreign key(emp_no) references salaries (emp_no),
+	emp_title_id varchar not null,
+	foreign key (emp_title_id) references titles(title_id),
+	birth_date date not null,
+	first_name varchar not null,
+	last_name varchar not null,
+	sex varchar not null,
+	hire_date date not null
+);
