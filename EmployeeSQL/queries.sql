@@ -14,3 +14,10 @@ join employees
 on dept_emp.emp_no = employees.emp_no
 join departments
 on dept_emp.dept_no = departments.dept_no;
+
+select dept_emp.emp_no, employees.first_name, employees.last_name, dept_emp.dept_no,
+departments.dept_name from employees
+join dept_emp
+on dept_emp.emp_no = employees.emp_no 
+join departments 
+on departments.dept_no = dept_emp.dept_no;
