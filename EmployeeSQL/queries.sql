@@ -31,3 +31,10 @@ on dept_emp.emp_no = employees.emp_no
 join departments 
 on departments.dept_no = dept_emp.dept_no
 where departments.dept_name = 'Sales';
+
+select dept_emp.emp_no, employees.first_name, employees.last_name, departments.dept_name from employees
+join dept_emp
+on dept_emp.emp_no = employees.emp_no 
+join departments 
+on departments.dept_no = dept_emp.dept_no
+where (departments.dept_name = 'Sales') or (departments.dept_name ='Development');
