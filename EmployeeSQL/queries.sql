@@ -38,3 +38,8 @@ on dept_emp.emp_no = employees.emp_no
 join departments 
 on departments.dept_no = dept_emp.dept_no
 where (departments.dept_name = 'Sales') or (departments.dept_name ='Development');
+
+select last_name, count(last_name) 
+from employees 
+group by last_name
+order by count(last_name) desc;
