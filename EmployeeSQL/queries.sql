@@ -21,3 +21,6 @@ join dept_emp
 on dept_emp.emp_no = employees.emp_no 
 join departments 
 on departments.dept_no = dept_emp.dept_no;
+
+select first_name, last_name, sex from employees 
+where (first_name = 'Hercules' ) and (last_name like 'B%');
